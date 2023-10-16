@@ -1,0 +1,289 @@
+/* -------------------- Global CSS for about us file -------------------- */
+.heading{
+    font-size: 4vw;
+}
+
+.description{
+    font-size: 1.2vw;
+    color: rgb(83, 83, 83);
+    margin: 1vw 0vw 1.5vw 0vw;
+}
+
+.learnMoreBtn{
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    font-size: 1.2vw;
+    padding: 0.8vw 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    transition: 0.3s;
+}
+
+.learnMoreBtn:hover{
+    background-color: #263238;
+    border: 2px solid #263238;
+}
+
+.learnMoreBtn a{
+    font-weight: 700;
+    color: white;
+    margin-right: 5px;
+}
+
+.learnMoreBtn i{
+    font-size: 20px;
+    color: white;
+    animation: move-right infinite 1s ease-in-out;
+}
+
+@keyframes move-right {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(5px);
+    }
+}
+
+/* -------------------- main -------------------- */
+.main{
+    width: 100%;
+    /* height: 100%; */
+}
+
+/* -------------------- section1 -------------------- */
+.section1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0vw 5vw;
+}
+
+/* ------------ left-section1 ------------ */
+.section1 .left-section1{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------ right-section1 ------------ */
+.section1 .right-section1{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section1 img{
+    width: 90%;
+    transition: 0.5s;
+}
+
+.right-section1 img:hover{
+    transform: translateY(-10px);
+}
+
+/* -------------------- section2 -------------------- */
+.section2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0vw 5vw;
+}
+
+.section2 .left-section2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section2 img{
+    width: 85%;
+    transition: 0.5s;
+}
+
+.left-section2 img:hover{
+    transform: translateY(-10px);
+}
+
+/* ------------ right-section2 ------------ */
+.section2 .right-section2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------------- section3 -------------------- */
+.section3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0vw 5vw;
+}
+
+/* ------------ left-section3 ------------ */
+.section3 .left-section3{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------ right-section3 ------------ */
+.section3 .right-section3{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section3 img{
+    width: 82%;
+    transition: 0.5s;
+}
+
+.right-section3 img:hover{
+    transform: translateY(-10px);
+}
+
+/* -------------------- section4 -------------------- */
+.section4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0vw 5vw;
+}
+
+.section4 .left-section4{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section4 img{
+    width: 90%;
+    transition: 0.5s;
+}
+
+.left-section4 img:hover{
+    transform: translateY(-10px);
+}
+
+/* ------------ right-section2 ------------ */
+.section4 .right-section4{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* --------------------             -------------------- */
+/* -------------------- media query -------------------- */
+/* --------------------             -------------------- */
+
+
+@media only screen and (max-width: 600px){
+    /* -------------------- Global CSS -------------------- */
+    .learnMoreBtn{
+        padding: 2vw 3vw;
+        font-size: 4vw;
+    }
+
+    .heading{
+        font-size: 9vw;
+    }
+
+    .description{
+        font-size: 4vw;
+        margin: 2.4vw 0vw 4vw 0vw;
+    }
+
+    /* -------------------- section1 -------------------- */
+    .section1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ------------ left-section1 ------------ */
+    .section1 .left-section1{
+        width: 100%;
+    }
+
+    /* ------------ right-section1 ------------ */
+    .section1 .right-section1{
+        width: 100%;
+    }
+
+    .section1 .right-section1 img{
+        width: 100%;
+    }
+
+
+
+    /* -------------------- section2 -------------------- */
+    .section2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* ------------ left-section2 ------------ */
+    .section2 .left-section2{
+        width: 100%;
+    }
+
+    /* ------------ right-section2 ------------ */
+    .section2 .right-section2{
+        width: 100%;
+    }
+    .section2 .right-section2 img{
+        width: 100%;
+    }
+
+
+
+    /* -------------------- section3 -------------------- */
+    .section3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ------------ left-section3 ------------ */
+    .section3 .left-section3{
+        width: 100%;
+    }
+
+    /* ------------ right-section3 ------------ */
+    .section3 .right-section3{
+        width: 100%;
+        margin-top: 6vw;
+    }
+
+
+    /* -------------------- section4 -------------------- */
+    .section4{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 10px;
+    }
+
+    /* ------------ left-section2 ------------ */
+    .section4 .left-section4{
+        width: 100%;
+    }
+
+    /* ------------ right-section2 ------------ */
+    .section4 .right-section4{
+        width: 100%;
+    }
+    .section4 .right-section4 img{
+        width: 100%;
+    }
+}

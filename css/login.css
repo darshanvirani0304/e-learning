@@ -1,0 +1,168 @@
+/* -------------------- main -------------------- */
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+/* -------------------- left-section -------------------- */
+.main .left-section{
+    width: 50%;
+    height: 100%;
+}
+
+/* ------------ navbar ------------ */
+.left-section .nav{
+    width: 100%;
+    height: 60px;
+    padding: 0vw 3vw;
+}
+
+.left-section .nav a{
+    display: flex;
+    align-items: center;
+    outline: none;
+}
+
+.nav a i{
+    font-size: 46px;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.nav a h2{
+    font-size: 20px;
+    padding-left: 10px;
+    border-left: 2px solid #cccccc;
+    font-weight: 800;
+}
+
+/* ------------ login-section ------------ */
+.left-section .login-section{
+    width: 100%;
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------ login-form (parent - heading, form, footer) ------------ */
+.login-section .login-form{
+    width: 380px;
+    padding: 26px;
+    border-radius: 20px;
+}   
+
+/* ------------ login-heading (1) ------------ */
+.login-section .login-form .login-heading{
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.login-form .login-heading h2{
+    font-size: 28px;
+}
+
+.login-form .login-heading p{
+    color: var(--secondary-textColor);
+    font-size: 14px;
+}
+
+/* ------------ form (2) ------------ */
+.login-form .form{
+    margin-bottom: 16px;
+}
+
+.login-form label{
+    font-weight: 600;
+}
+
+.login-form input[type="text"], input[type="email"], input[type="password"]{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid hsl(0, 0%, 85%);
+    border-radius: 6px;
+    outline-color: var(--primary-color);
+    margin-top: 5px;
+    font-weight: 700;
+} 
+
+.login-form .error{
+    color: red;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.login-form .login-btn{
+    width: 100%;
+    padding: 4px;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    font-size: 16px;
+    color: white;
+    margin-top: 8px;
+}
+
+/* ------------ login-footer (3) ------------ */
+.login-form .login-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.login-form .login-footer .question{
+    color: var(--secondary-textColor);
+    font-size: 12px;
+}
+
+.login-footer .question a{
+    color: var(--primary-color);
+}
+
+
+/* -------------------- right-section -------------------- */
+.right-section{
+    width: 50%;
+    height: 100%;
+    background-color: lavender;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* ------------ right-section img ------------ */
+.right-section img{
+    width: 90%;
+}
+
+
+/* -------------------- Responsive - media query -------------------- */
+@media only screen and (max-width: 768px){
+    /* -------------------- main -------------------- */
+    .main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+        overflow: visible;
+    }
+    
+    /* -------------------- left-section -------------------- */
+    .main .left-section{
+        width: 100%;
+    }
+
+    .left-section .login-section{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    /* -------------------- right-section -------------------- */
+    .main .right-section{
+        width: 100%;
+    }
+}

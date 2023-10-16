@@ -1,0 +1,14 @@
+E-learning Website pages
+    1. Home
+    2. Course
+    3. Contect Us
+    4. profile
+        1. Login
+        2. Signup
+        3. Logout
+        4. Update Profile
+        5. Reset Password  
+            1. Recover Email
+            2. Reset Passowrd
+        6. Delete Account
+    5. About Us

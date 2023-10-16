@@ -1,0 +1,451 @@
+/* -------------------- Global CSS -------------------- */
+.join-course-btn{
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    font-size: 1.2vw;
+    padding: 0.8vw 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    transition: 0.3s;
+}
+
+.join-course-btn:hover{
+    background-color: #263238;
+    border: 2px solid #263238;
+}
+
+.join-course-btn a{
+    font-weight: 700;
+    color: white;
+    margin-right: 5px;
+}
+
+.join-course-btn i{
+    font-size: 20px;
+    color: white;
+    animation: move-right infinite 1s ease-in-out;
+}
+
+@keyframes move-right {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(5px);
+    }
+}
+
+/* -------------------- main -------------------- */
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* -------------------- section1 -------------------- */
+.section1{
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+    padding: 0vw 5vw;
+}
+
+/* ------------ left-section1 ------------ */
+.section1 .left-section1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section1 .detail h1{
+    font-size: 5vw;
+}
+
+.left-section1 .detail h1 span{
+    color: var(--primary-color);
+}
+
+.left-section1 .detail .learn{
+    font-size: 2.8vw;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.left-section1 .detail .description{
+    font-weight: 600;
+    color: rgb(83, 83, 83);
+    margin-bottom: 19px;
+}
+
+.join-course-btn{
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    font-size: 1.2vw;
+    padding: 0.8vw 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.join-course-btn a{
+    font-weight: 700;
+    color: white;
+    margin-right: 5px;
+}
+
+.join-course-btn i{
+    font-size: 20px;
+    color: white;
+    animation: move-right infinite 1s ease-in-out;
+}
+
+@keyframes move-right {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(5px);
+    }
+}
+
+/* ------------ right-section1 ------------ */
+.section1 .right-section1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 .right-section1 img{
+    width: 90%;
+}
+
+/* -------------------- section2 -------------------- */
+.section2{
+    background-color: rgb(243, 243, 255);
+    padding: 2vw 5vw;
+    color: var(--primary-color);
+}
+
+.section2 h1{
+    text-align: center;
+}
+
+.section2 .info-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.info-box .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vw;
+}
+
+.info-box .card .number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-box .card .number i{
+    font-size: 30px;
+    margin-right: 6px;
+}
+
+/* -------------------- section3 -------------------- */
+.section3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0vw 5vw;
+}
+
+/* ------------ left-section3 ------------ */
+.left-section3{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section3 .detail h1{
+    font-size: 3vw;
+    margin-bottom: 15px;
+}
+
+.left-section3 .detail p{
+    font-weight: 600;
+    color: rgb(83, 83, 83);
+    margin-bottom: 19px;
+}
+
+/* ------------ right-section3 ------------ */
+.right-section3{
+    width: 50%;
+    height: 100%;
+}
+
+.right-section3 img{
+    width: 100%;
+}
+
+/* -------------------- section4 -------------------- */
+.section4{
+    width: 100%;
+    padding: 0vw 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-container{
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-wrapper .card{
+    background-color: rgb(246, 246, 250);
+    border-radius: 10px;
+    border-bottom: 4px solid rgb(212, 198, 228);
+    width: 100%;
+}
+
+.card-wrapper .card .icon-box{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card-wrapper .card .icon-box i{
+    width: 90px;
+    height: 90px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lavender;
+    color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.card-wrapper .card .content{
+    padding: 0px 20px 20px 20px;
+    text-align: center;
+}
+
+.card-wrapper .card .content h2{
+    font-size: 26px;
+}
+
+.card-wrapper .card .content p{
+    font-size: 15px;
+    color: rgb(83, 83, 83);
+    margin-top: 5px;
+}
+
+/* slide left-right btn and pagination */
+.slide-btn{
+    color: var(--primary-color);
+}
+
+.slide-btn:after, .slide-btn::before{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.swiper-button-next{
+    right: 0;
+}
+
+.swiper-button-prev{
+    left: 0;
+}
+
+.swiper-pagination-bullet{
+    background-color: rgb(218, 218, 250);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--primary-color);
+    opacity: 1;
+}
+
+/* -------------------- section5 -------------------- */
+.section5{
+    padding: 2vw 5vw;
+    text-align: center;
+}
+
+.section5 h1{
+    font-size: 4vw;
+}
+
+.section5 h1 span{
+    color: var(--primary-color);
+}
+
+.section5 .company_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1vw 5vw;
+    margin: 2vw 2vw 3vw 2vw;
+}
+
+.section5 .company_name img{
+    width: 100px;
+}
+
+.section5 p{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.section5 .center-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* --------------------             -------------------- */
+/* -------------------- Media Query -------------------- */
+/* --------------------             -------------------- */
+
+@media only screen and (max-width : 768px){
+    /* -------------------- Global CSS -------------------- */
+    .join-course-btn{
+        font-size: 3.2vw;
+        padding: 1.4vw 3vw;
+    }
+
+    /* -------------------- section1 -------------------- */
+    .section1{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* ------------ left-section1 ------------ */
+    .section1 .left-section1{
+        width: 100%;
+        height: 100%;
+    }
+
+    .left-section1 .detail h1{
+        font-size: 10vw;
+    }
+    
+    .left-section1 .detail .learn{
+        font-size: 7vw;
+    }
+
+    /* ------------ right-section1 ------------ */
+    .section1 .right-section1{
+        width: 100%;
+        height: 100%;
+        padding: 20px 0px;
+    }
+
+    /* -------------------- section2 -------------------- */
+    .section2{
+        padding: 5vw 0vw;
+    }
+
+    .section2 h1{
+        font-size: 26px;
+    }
+    
+    .section2 .info-box{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 10px;
+    }
+    
+    .info-box .card{
+        margin-bottom: 10px;
+    }
+
+    .info-box .card h3{
+        font-size: 16px;
+    }
+
+    .info-box .card .number h2{
+        font-size: 20px;
+    }
+
+    .info-box .card .number i{
+        font-size: 20px;
+        margin-right: 6px;
+    }
+
+    /* -------------------- section3 -------------------- */
+    .section3{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    /* ------------ left-section3 ------------ */
+    .section3 .left-section3{
+        width: 100%;
+        height: 100%;
+    }
+
+    .left-section3 .detail h1{
+        font-size: 8vw;
+    }
+
+    /* ------------ right-section3 ------------ */
+    .section3 .right-section3{
+        width: 100%;
+        height: 100%;
+        padding: 20px 0px;
+    }
+
+    /* -------------------- section4 -------------------- */ 
+    .slide-btn:after, .slide-btn::before{
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    /* -------------------- section5 -------------------- */
+    .section5 h1{
+        font-size: 8vw;
+    }
+
+    .section5 h1 span{
+        color: var(--primary-color);
+    }
+
+    .section5 .company_name{
+        gap: 2vw 8vw;
+        margin: 2vw 0vw 3vw 0vw;
+    }
+
+    .section5 .company_name img{
+        width: 80px;
+    }
+}

@@ -1,0 +1,145 @@
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(250, 250, 250);
+}
+
+/* -------------------- section1 -------------------- */
+.section1{
+    width: 100%;
+    padding: 2vw 5vw;
+}
+
+/* ------------ course ------------ */
+.course{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+/* course-card */
+.course .course-card{
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgb(240, 240, 240);
+}
+
+/* course-img */
+.course .course-card .course-img{
+    width: 100%;
+    height: 220px;
+}
+
+.course .course-card .course-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* course-detail */
+.course-card .course-detail{
+    padding: 10px 15px 15px 15px;
+}
+
+.course-detail .course-name{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.course-detail .course-description{
+    font-size: 15px;
+    color: rgb(61, 61, 61);
+    font-weight: 600;
+}
+
+.course-detail .detail-box{
+    display: flex;
+    align-items: center;
+    margin: 12px 0px;
+}
+
+.course-detail .detail-box i{
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.course-detail .detail-box p{
+    font-size: 15px;
+    color: rgb(61, 61, 61);
+    font-weight: 600;
+}
+
+.enroll-now{
+    width: 40%;
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    font-size: 16px;
+    padding: 6px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    transition: 0.3s;
+}
+
+.enroll-now:hover{
+    background-color: #263238;
+    border: 2px solid #263238;
+}
+
+.enroll-now a{
+    font-weight: 600;
+    color: white;
+    margin-right: 5px;
+}
+
+.enroll-now i{
+    font-size: 16px;
+    color: white;
+}
+
+/* --------------------             -------------------- */
+/* -------------------- Media Query -------------------- */
+/* --------------------             -------------------- */
+
+@media only screen and (max-width: 767px){
+    .section1 .course{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .course .course-card .course-img{
+        width: 100%;
+        height: auto;
+        background-color: lightgrey;
+    }
+
+    .enroll-now{
+        width: 100%;
+        font-size: 20px;
+        padding: 1vw 0vw;
+    }
+    
+    .enroll-now i{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .section1 .course{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .enroll-now{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 2600px){
+    .main{
+        padding: 0px 15%;
+    }
+}

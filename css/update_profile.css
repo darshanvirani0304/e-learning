@@ -1,0 +1,149 @@
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* overflow: hidden; */
+}
+
+/* -------------------- left-section -------------------- */
+.left-section{
+    width: 50%;
+    height: 100%;
+}
+
+/* ------------ navbar ------------ */
+.left-section .nav{
+    width: 100%;
+    height: 60px;
+    padding: 0vw 3vw;
+    display: flex;
+    align-items: center;
+}
+
+.left-section .nav a{
+    display: flex;
+    align-items: center;
+    outline: none;
+}
+
+.nav a i{
+    font-size: 46px;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.nav a h2{
+    font-size: 20px;
+    padding-left: 10px;
+    border-left: 2px solid #cccccc;
+    font-weight: 800;
+}
+
+/* ------------ update-section ------------ */
+.left-section .update-section{
+    width: 100%;
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------ update-form (parent - heading, form, footer) ------------ */
+.update-section .update-form{
+    width: 380px;
+    padding: 26px;
+    border-radius: 20px;
+}
+
+/* ------------ update-heading (1) ------------ */
+.update-section .update-form .update-heading{
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.update-form .update-heading h2{
+    font-size: 28px;
+}
+
+.update-form .update-heading p{
+    color: var(--secondary-textColor);
+    font-size: 14px;
+}
+
+/* ------------ form (2) ------------ */
+.update-form .form{
+    margin-bottom: 16px;
+}
+
+.update-form label{
+    font-weight: 600;
+}
+
+.update-form input[type="text"], input[type="email"]{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid hsl(0, 0%, 85%);
+    border-radius: 6px;
+    outline-color: var(--primary-color);
+    margin-top: 5px;
+    font-weight: 700;
+} 
+
+.update-form .error{
+    color: red;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.update-form .update-btn{
+    width: 100%;
+    padding: 4px;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    font-size: 16px;
+    color: white;
+    margin-top: 8px;
+}
+
+/* -------------------- right-section -------------------- */
+.right-section{
+    width: 50%;
+    height: 100%;
+    background-color: lavender;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section img{
+    width: 90%;
+}
+
+/* -------------------- Responsive - media query -------------------- */
+@media only screen and (max-width: 768px){
+    /* -------------------- main -------------------- */
+    .main{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* -------------------- left-section -------------------- */
+    .main .left-section{
+        width: 100%;
+    }
+
+    .left-section .update-section{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    /* -------------------- right-section -------------------- */
+    .main .right-section{
+        width: 100%;
+        /* display: none; */
+    }
+}

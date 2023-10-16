@@ -1,0 +1,128 @@
+[
+    {
+        "id" : 1,
+        "title" : "Introduction Programing and Python",
+        "name" : "../video/v1.mp4",
+        "duration" : "11:49",
+        "detail" : "Python is a popular programming language. It was created by Guido van Rossum, and released in 1991. web development (server-side), software development, mathematics, system scripting."
+    },
+    {
+        "id" : 2,
+        "title" : "Modules, Comments & Pip",
+        "name" : "../video/v2.mp4",
+        "duration" : "07:23",
+        "detail" : "Comments can be used to explain Python code. Comments can be used to make the code more readable. Comments can be used to prevent execution when testing code."
+    },
+    {
+        "id" : 3,
+        "title" : "Comment, escape Sequences, String",
+        "name" : "../video/v3.mp4",
+        "duration" : "05:18",
+        "detail" : "Strings in python are surrounded by either single quotation marks, or double quotation marks. 'hello' is the same as 'hello'."
+    },
+    {
+        "id" : 4,
+        "title" : "Prectice Set 1",
+        "name" : "../video/v4.mp4",
+        "duration" : "08:10",
+        "detail" : "(1) Python program to interchange first and last elements in a list. <br> (2) Python program to swap two elements in a list."
+    },
+    {
+        "id" : 5,
+        "title" : "Lists & Tuples",
+        "name" : "../video/v5.mp4",
+        "duration" : "07:23",
+        "detail" : "Lists are used to store multiple items in a single variable. Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary."
+    },
+    {
+        "id" : 6,
+        "title" : "Variable and Data Types",
+        "name" : "../video/v1.mp4",
+        "duration" : "11:49",
+        "detail" : "Variables are containers for storing data values.Python has no command for declaring a variable. A variable is created the moment you first assign a value to it."
+    },
+    {
+        "id" : 7,
+        "title" : "User Inputs and Opearator",
+        "name" : "../video/v2.mp4",
+        "duration" : "07:23",
+        "detail" : "Python divides the operators (1) Arithmetic operators , (2) Assignment operators , (3) Comparison operators , (4) Logical operators , (5) Identity operators , (6) Membership operators , (7) Bitwise operators"
+    },
+    {
+        "id" : 8,
+        "title" : "If...Else Conditional Statement and Switch case",
+        "name" : "../video/v3.mp4",
+        "duration" : "05:18",
+        "detail" : "These conditions can be used in several ways, most commonly in 'if statements' and loops. An 'if statement' is written by using the if keyword."
+    },
+    {
+        "id" : 9,
+        "title" : "Loops in Python",
+        "name" : "../video/v4.mp4",
+        "duration" : "08:10",
+        "detail" : "Python Support while and for loop. A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).This is less like the for keyword in other programming languages."
+    },
+    {
+        "id" : 10,
+        "title" : "Break and Continue",
+        "name" : "../video/v5.mp4",
+        "duration" : "07:23",
+        "detail" : "break statement in Python is used to bring the control out of the loop when some external condition is triggered. break statement is put inside the loop body (generally after if condition)."
+    },
+    {
+        "id" : 11,
+        "title" : "Prectice Set 2",
+        "name" : "../video/v1.mp4",
+        "duration" : "11:49",
+        "detail" : "(1) Python program to check whether the string is Symmetrical or Palindrome. <br> (2) Reverse words in a given String in Python <br>"
+    },
+    {
+        "id" : 12,
+        "title" : "Functions & Recursion",
+        "name" : "../video/v2.mp4",
+        "duration" : "07:23",
+        "detail" : "A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result."
+    },
+    {
+        "id" : 13,
+        "title" : "Set Method In Python",
+        "name" : "../video/v3.mp4",
+        "duration" : "05:18",
+        "detail" : "A Set in Python is a collection of unique elements which are unordered and mutable. Python provides various functions to work with Set."
+    },
+    {
+        "id" : 14,
+        "title" : "Object Oriented Programming",
+        "name" : "../video/v4.mp4",
+        "duration" : "08:10",
+        "detail" : "In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in programming. It aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc."
+    },
+    {
+        "id" : 15,
+        "title" : "Inheritance",
+        "name" : "../video/v5.mp4",
+        "duration" : "07:23",
+        "detail" : "Inheritance allows us to define a class that inherits all the methods and properties from another class. Parent class is the class being inherited from, also called base class. Child class is the class that inherits from another class, also called derived class."
+    },
+    {
+        "id" : 16,
+        "title" : "Dictionaries and Diction Method",
+        "name" : "../video/v1.mp4",
+        "duration" : "11:49",
+        "detail" : "Dictionary in Python is a collection of keys values, used to store data values like a map, which, unlike other data types which hold only a single value as an element."
+    },
+    {
+        "id" : 17,
+        "title" : "Prectice Set 3",
+        "name" : "../video/v2.mp4",
+        "duration" : "07:23",
+        "detail" : "(1) Python program to Find the size of a Tuple. <br> (2) Python - Maximum and Minimum K elements in Tuple."
+    },
+    {
+        "id" : 18,
+        "title" : "Snake, Water, Gun Game",
+        "name" : "../video/v3.mp4",
+        "duration" : "05:18",
+        "detail" : "Snake Water Gun is one of the famous two-player game played by many people. It is a hand game in which the player randomly chooses any of the three forms i.e. snake, water, and gun. Here, we are going to implement this game using python. "
+    }
+]

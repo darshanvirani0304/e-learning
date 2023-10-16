@@ -1,0 +1,224 @@
+html, body{
+    overflow-x: hidden;
+}
+
+/* -------------------- nav -------------------- */
+.nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vw 5vw;
+    background-color: rgba(247, 247, 252, 0.6);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+
+/* -------------------- left-nav -------------------- */
+.left-nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.left-nav a i{
+    margin-right: 10px;
+    font-size: 4vw;
+    color: var(--primary-color);
+}
+
+.left-nav a h2{
+    padding-left: 10px;
+    border-left: 2px solid #cccccc;
+    font-size: 1.8vw;
+    font-weight: 800;
+}
+
+/* -------------------- right-nav -------------------- */
+.right-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.right-nav ul li{
+    position: relative;
+}
+
+.right-nav ul li a{
+    font-weight: 700;
+    height: 70px;
+    line-height: 70px;
+}
+
+.right-nav ul li a:hover{
+    color: var(--primary-color);
+}
+
+/* dropdown-menu hover effect */
+.right-nav .dropdown-menu:hover > .profile-box{
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+
+/* ------------ dropdown-menu ------------ */
+/* .dropdown-menu{
+    position: absolute;
+} */
+
+.profile-box{
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background-color: rgb(249, 249, 255);
+    width: 240px;
+    padding: 10px 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s linear;
+    z-index: 999;
+}
+
+/* ---- user-info ---- */
+.profile-box .user-info{
+    padding: 0px 14px 10px 14px;
+    border-bottom: 1px solid rgb(194, 194, 218);
+    margin-bottom: 10px;
+}
+
+.profile-box .user-info h2{
+    font-size: 26px;
+}
+
+.profile-box .user-info p{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(83, 83, 83);
+}
+
+/* ---------- Global Card CSS ---------- */
+.profile-box .card{
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.profile-box .card:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.profile-box .card:hover a{
+    color: white;
+}
+
+.profile-box .card i{
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.profile-box .card a{
+    height: 0px;
+    line-height: 0;
+    font-weight: 600;
+}
+
+/* -------------------- toggle-btn -------------------- */
+.toggle-btn{
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.toggle-btn .close{
+    display: none;
+}
+
+/* --------------------             -------------------- */
+/* -------------------- Media Query -------------------- */
+/* --------------------             -------------------- */
+
+@media only screen and (max-width: 800px){
+    /* -------------------- navbar -------------------- */
+    /* .nav{
+        position: relative;
+    } */
+
+    /* -------------------- left-nav -------------------- */
+    .left-nav{
+        z-index: 999;
+    }
+
+    .left-nav a i{
+        font-size: 9vw;
+    }
+
+    .left-nav a h2{
+        font-size: 5.2vw;
+    }
+
+    /* -------------------- right-nav -------------------- */
+    .right-nav{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 70px 5vw 0px 5vw;
+        background-color: lavender;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 99;
+    }
+
+    .right-nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        position: relative;
+    }
+
+    .right-nav ul li a{
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .active .right-nav{
+        transform: translateX(0%);
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .active .toggle-btn .open{
+        display: none;
+    }
+
+    .active .toggle-btn .close{
+        display: block;
+    }
+
+    /* -------------------- toggle-btn -------------------- */
+    .toggle-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .toggle-btn i{
+        font-size: 30px;
+    }
+}
